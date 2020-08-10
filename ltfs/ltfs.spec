@@ -28,8 +28,13 @@ implemented on dual partition tape drives.
 %prep
 %setup -q
 
+%build
+%configure
+make %{?_smp_mflags}
+
 %install
-make install
+rm -rf $RPM_BUILD_ROOT
+%make_install
 
 %clean
 [ -d $RPM_BUILD_ROOT ] && rm -rf $RPM_BUILD_ROOT;
