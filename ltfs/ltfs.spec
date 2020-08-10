@@ -7,7 +7,6 @@ Group: Util
 License: LGPL	
 Vendor: LTFS
 Source0: ltfs_300_47.tar.gz
-Prereq: /sbin/ldconfig, /usr/bin/awk
 Requires:  fuse >= 2.8.4
 Requires:  libxml2 >= 2.6.16
 Requires:  libicu >= 3.6
