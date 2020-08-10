@@ -16,6 +16,7 @@ BuildRequires: gcc
 BuildRequires: make
 BuildRequires: icu
 BuildRequires: fuse-devel
+BuildRequires: uuid-devel
 BuildRoot: /tmp/rpm/%{name}-%{version}
 
 %define _unpackaged_files_terminate_build       0
