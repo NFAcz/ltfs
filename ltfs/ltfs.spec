@@ -28,23 +28,8 @@ implemented on dual partition tape drives.
 %prep
 %setup -q
 
-%build
-./configure
-make
-
-%pretrans
-
-%posttrans
-/sbin/ldconfig
-
 %install
 make install
-
-%post
-/sbin/ldconfig
-
-%postun
-/sbin/ldconfig
 
 %clean
 [ -d $RPM_BUILD_ROOT ] && rm -rf $RPM_BUILD_ROOT;
