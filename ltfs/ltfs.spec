@@ -12,6 +12,8 @@ Requires:  fuse >= 2.8.4
 Requires:  libxml2 >= 2.6.16
 Requires:  libicu >= 3.6
 Requires:  e2fsprogs >= 1.36
+BuildRequires: gcc
+BuildRequires: make
 BuildRoot: /tmp/rpm/%{name}-%{version}
 
 %define _unpackaged_files_terminate_build       0
