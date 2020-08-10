@@ -83,6 +83,7 @@ fi
 make sysconfdir=$RPM_BUILD_ROOT install DESTDIR=$RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_prefix}%{_sysconf}
 mkdir -p $RPM_BUILD_ROOT%{_sysconf}/ld.so.conf.d
+mkdir -p $RPM_BUILD_ROOT%{_prefix}/share/snmp
 cp $RPM_BUILD_ROOT/ltfs.conf.local $RPM_BUILD_ROOT%{_prefix}%{_sysconf}
 cp $RPM_BUILD_ROOT$RPM_BUILD_ROOT/ltfs.conf $RPM_BUILD_ROOT%{_prefix}%{_sysconf}
 # echo "/usr/local/lib" > $RPM_BUILD_ROOT%{_sysconf}/ld.so.conf.d/%{name}.conf
