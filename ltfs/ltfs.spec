@@ -15,8 +15,10 @@ Requires:  e2fsprogs >= 1.36
 BuildRequires: gcc
 BuildRequires: make
 BuildRequires: icu
+BuildRequires: libicu-devel
 BuildRequires: fuse-devel
-BuildRequires: uuid-devel
+BuildRequires: libuuid-devel
+BuildRequires: libxml2-devel
 BuildRoot: /tmp/rpm/%{name}-%{version}
 
 %define _unpackaged_files_terminate_build       0
