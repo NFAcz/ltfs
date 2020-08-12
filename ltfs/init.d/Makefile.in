@@ -368,11 +368,11 @@ uninstall-am:
 all:
 
 install-data-local:
-	if [ ! -d "@datadir@/ltfs" ]; then \
-		mkdir -p "@datadir@/ltfs"; \
+	if [ ! -d "$(DESTDIR)/share/ltfs" ]; then \
+		mkdir -p "$(DESTDIR)$(sysconfdir)/ltfs"; \
 	fi ;\
-	if [ ! -f "@datadir@/ltfs/ltfs" ]; then \
-		install -m 755 ltfs "@datadir@/ltfs/ltfs"; \
+	if [ ! -f "$(DESTDIR)/share/ltfs/ltfs" ]; then \
+		install -m 755 ltfs "$(DESTDIR)/share/ltfs/ltfs"; \
 	fi
 
 clean-local:
