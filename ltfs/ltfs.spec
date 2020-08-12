@@ -57,7 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/ltfs/libkmi-simple.so
 %config /etc/ltfs.conf
 %config /etc/ltfs.conf.local
-%config /etc/ld.so.conf.d/%{name}.conf
 
 %changelog
 * Wed May 11 2015 Murali <murali.vuppalapati@hp.com>
