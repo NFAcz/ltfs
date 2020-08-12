@@ -45,7 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/bin/ltfsck
 %{_prefix}/bin/mkltfs
 %{_prefix}/bin/unltfs
-%{_prefix}/bin/ltfscopy
 %{_libdir}/libltfs.a
 %{_libdir}/libltfs.la
 %{_libdir}/libltfs.so
