@@ -874,13 +874,13 @@ uninstall-am: uninstall-libLTLIBRARIES \
 
 
 install-data-local:
-	if [ ! -d "$(DESTDIR)/share/snmp" ]; then \
-		mkdir -p "$(DESTDIR)/share/snmp"; \
-		cp LtfsSnmpTrapDef.txt LTFS-MIB.txt "$(DESTDIR)/share/snmp/"; \
-	elif [ ! -f "$(DESTDIR)/share/snmp/LtfsSnmpTrapDef.txt" ]; then \
-		cp LtfsSnmpTrapDef.txt "$(DESTDIR)/share/snmp/LtfsSnmpTrapDef.txt"; \
-	elif [ ! -f "$(DESTDIR)/share/snmp/LTFS-MIB.txt" ]; then \
-		cp LTFS-MIB.txt "$(DESTDIR)/share/snmp/LTFS-MIB.txt"; \
+	if [ ! -d "$(DESTDIR)$(prefix)/share/snmp" ]; then \
+		mkdir -p "$(DESTDIR)$(prefix)/share/snmp"; \
+		cp LtfsSnmpTrapDef.txt LTFS-MIB.txt "$(DESTDIR)$(prefix)/share/snmp/"; \
+	elif [ ! -f "$(DESTDIR)$(prefix)/share/snmp/LtfsSnmpTrapDef.txt" ]; then \
+		cp LtfsSnmpTrapDef.txt "$(DESTDIR)$(prefix)/share/snmp/LtfsSnmpTrapDef.txt"; \
+	elif [ ! -f "$(DESTDIR)$(prefix)/share/snmp/LTFS-MIB.txt" ]; then \
+		cp LTFS-MIB.txt "$(DESTDIR)$(prefix)/share/snmp/LTFS-MIB.txt"; \
 	fi
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
