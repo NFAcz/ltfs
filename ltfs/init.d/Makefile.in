@@ -368,11 +368,11 @@ uninstall-am:
 all:
 
 install-data-local:
-	if [ ! -d "$(DESTDIR)/share/ltfs" ]; then \
-		mkdir -p "$(DESTDIR)/share/ltfs"; \
+	if [ ! -d "$(DESTDIR)$(prefix)/share/ltfs" ]; then \
+		mkdir -p "$(DESTDIR)$(prefix)/share/ltfs"; \
 	fi ;\
-	if [ ! -f "$(DESTDIR)/share/ltfs/ltfs" ]; then \
-		install -m 755 ltfs "$(DESTDIR)/share/ltfs/ltfs"; \
+	if [ ! -f "$(DESTDIR)$(prefix)/share/ltfs/ltfs" ]; then \
+		install -m 755 ltfs "$(DESTDIR)$(prefix)/share/ltfs/ltfs"; \
 	fi
 
 clean-local:
