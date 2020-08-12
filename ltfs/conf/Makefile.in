@@ -429,8 +429,8 @@ ltfs.conf: ltfs.conf.linux
 	rm ltfs.conf.tmp
 
 install-data-local:
-	if [ ! -f "$(sysconfdir)/ltfs.conf.local" ]; then \
-		cp ltfs.conf.local "$(sysconfdir)/ltfs.conf.local"; \
+	if [ ! -f "$(DESTDIR)$(sysconfdir)/ltfs.conf.local" ]; then \
+		cp ltfs.conf.local "$(DESTDIR)$(sysconfdir)/ltfs.conf.local"; \
 	fi
 
 clean-local:
