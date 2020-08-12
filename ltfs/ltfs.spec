@@ -55,8 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/ltfs/libiosched-unified.so
 %{_libdir}/ltfs/libkmi-flatfile.so
 %{_libdir}/ltfs/libkmi-simple.so
-%{_prefix}/etc/ltfs.conf
-%{_prefix}/etc/ltfs.conf.local
+%config /etc/ltfs.conf
+%config /etc/ltfs.conf.local
 %config /etc/ld.so.conf.d/%{name}.conf
 
 %changelog
